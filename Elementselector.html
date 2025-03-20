@@ -4,10 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Css Elecment Selector</title>
+    <style>
+        /* Elemet Selecor */
+        div{
+         
+            width: 100%;
+            background-color: red;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+        }
+        /* Id selector */
+        #par{
+            background-color: blue;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+        }
+        /* Class selector */
+        .vip{
+            background-color: green;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+        }
+        /* Attribute Selector */
+        [id="vip"]{
+            background-color: yellow;
+            color: black;
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+        }
+        /* Universal Selector */
+*{
+    
+    box-sizing: border-box;
+    border: 10px solid black;
+  
+}
+/* Group Selector */
+div,p{
+    background-color: pink;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    display: inline-block;
+}
+/* pesudo selecor */
+p::before{
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    margin-top: 10px;
+}
+p::after{
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    margin-top: 10px;
+}
+P:hover{
+    background-color: red;
+    color: white;
+}
+    </style>
 </head>
 <body>
     <div>
 Element Selector
     </div>
+    <p id="par">paragraph</p>
+    <p class="vip" >paragraph1</p>
+    <p id="vip" >paragraph2</p>
+    
 </body>
 </html>
